@@ -2,7 +2,7 @@ import pandas as pd
 import re
 ip = re.compile(r"^(?:[0-9]{1,3}\.){3}[0-9]{1,3}")
 status = re.compile(r" \b\d\d\d\b ")
-with open('access_log', 'r') as file:
+with open('/root/mydata/access_log', 'r') as file:
     ipList = []
     statusList = []
     for line in file.readlines():
